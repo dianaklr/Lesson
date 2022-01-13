@@ -1,0 +1,46 @@
+#orange{
+    border-radius: 30px;
+    height: 45px;
+    width: 170px;
+    border: 4px solid #ff6e1d;
+    color: #ff6e1d;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+p{
+    font-size: 14px;
+}
+
+div{
+    margin-top: 30px;
+}
+
+#aqua{
+    border-radius: 30px;
+    height: 45px;
+    width: 170px;
+    border: 4px solid #2cfff2;
+    color: #2cfff2;
+    text-align: center;
+}
+
+#pink{
+    border-radius: 30px;
+    height: 45px;
+    width: 170px;
+    border: 4px solid #ff54a6;
+    color: #ff54a6;
+    text-align: center;
+}
+#red{
+    border-radius: 30px;
+    height: 45px;
+    width: 170px;
+    border: 4px solid #fd3e3e;
+    color: #fd3e3e;
+    text-align: center;
+}
+
+
