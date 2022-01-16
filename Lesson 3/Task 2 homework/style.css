@@ -1,0 +1,35 @@
+#header{
+    width: 99%;
+    background-color: pink;
+    height: 200px;
+    margin: 0 10px;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#menu{
+    width: 40%;
+    background-color: aquamarine;
+    height: 600px;
+    margin: 10px;
+}
+
+#content{
+    width: 60%;
+}
+
+.post{
+    background-color: aqua;
+    height: 295px;
+    margin: 10px;
+}
+
+#footer{
+    width: 99%;
+    background-color: deepskyblue;
+    height: 200px;
+    margin: 0 10px;
+}
