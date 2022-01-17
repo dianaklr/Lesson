@@ -1,0 +1,47 @@
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+    font-weight: 100;
+    margin: 50px;
+}
+
+.ContentBox{
+    width: 27%;
+    height: 370px;
+    border: 1px solid #adadad;
+    box-shadow: 1px 1px 3px #e7e7e7;
+    padding: 10px;
+    /*display: flex;*/
+    /*text-align: center;*/
+
+    display: flex;
+   flex-direction: column;
+}
+.ContentBox i{
+    color: #999999;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.ContentBox p{
+    color: #95989c;
+    text-align: center;
+    font-size: 17px;
+}
+
+.ContentBox div{
+    height: 50px;
+    width: 150px;
+    background: #55c3b6;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.ContentBox div p{
+    color: white;
+    text-align: center;
+    margin: auto;
+
+}

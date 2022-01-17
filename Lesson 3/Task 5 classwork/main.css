@@ -9,16 +9,21 @@ h2{
 }
 
 .ContentBox{
-    width: 27%;
-    height: 370px;
+    width: 25%;
+    height: 320px;
     border: 1px solid #adadad;
     box-shadow: 1px 1px 3px #e7e7e7;
     padding: 10px;
     /*display: flex;*/
     /*text-align: center;*/
-
+/*align-items: flex-end;*/
     display: flex;
-   flex-direction: column;
+
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .ContentBox i{
     color: #999999;
@@ -29,19 +34,51 @@ h2{
     color: #95989c;
     text-align: center;
     font-size: 17px;
+    margin-bottom: 0px;
+}
+.line-h{
+    line-height: 30px;
+
 }
 
-.ContentBox div{
-    height: 50px;
-    width: 150px;
-    background: #55c3b6;
-    margin: auto;
+.ContentBoxdiv{
+    height: 40px;
+    width: 200px;
+    background: white;
+    border: 1px solid black;
+    margin: 20px auto 40px auto;
     display: flex;
     align-items: center;
+
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #adadad;
+  position: relative;
+    top: 50px;
+    /*z-index: 1;*/
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i{
+    color: #ec9114;
+    font-size: 30px;
+
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+
 }
 .ContentBox div p{
-    color: white;
+    color: #000;
     text-align: center;
     margin: auto;
-
 }
