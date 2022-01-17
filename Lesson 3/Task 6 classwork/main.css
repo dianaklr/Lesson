@@ -1,47 +1,80 @@
-#main{
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #54d5eb;
+}
+#center{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
-h2{
-    text-align: center;
-    font-weight: 100;
-    margin: 50px;
-}
-
-.ContentBox{
-    width: 27%;
-    height: 370px;
-    border: 1px solid #adadad;
-    box-shadow: 1px 1px 3px #e7e7e7;
-    padding: 10px;
+#left{
     /*display: flex;*/
-    /*text-align: center;*/
-
+    width: 40%;
+    height: 600px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
 }
-.ContentBox i{
-    color: #999999;
-    margin-top: 30px;
-    font-size: 30px;
+#leftTop{
+    height: 40%;
+    background: #d8c9e3;
 }
-.ContentBox p{
-    color: #95989c;
+#leftBottom{
+    height: 60%;
+    background-color: #9fc363;
+
+}
+#right{
+    width: 60%;
+    height: 600px;
+    background: #f6c531;
+    display: flex;
+    flex-direction: column;
+}
+
+#rightTop{
+    height: 70%;
+    background-color: #f6c531;
+}
+
+#rightBottom{
+    height: 30%;
+    background-color: #898989;
+}
+
+#middle{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+#middleLeft{
+    width: 70%;
+    background-color: #29b773;
+}
+#middleRight{
+    width: 30%;
+    background-color: #f3cdde;
+}
+
+#footer{
+    background-color: #ffa500;
+    height: 100px;
+}
+
+div{
+    border: 2px solid white;
+}
+
+
+p{
     text-align: center;
-    font-size: 17px;
-}
-
-.ContentBox div{
-    height: 50px;
-    width: 150px;
-    background: #55c3b6;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-.ContentBox div p{
+    margin-top: 20px;
+    font-size: 35px;
     color: white;
-    text-align: center;
-    margin: auto;
+    font-family: Geneva;
+    /*font-weight: 100;*/
+}
 
+body{
+    padding: 0px 10%;
 }
