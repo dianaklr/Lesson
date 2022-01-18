@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 3 - task 8">
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2 homework/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2 homework/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/task 1 homework/Task 1 homework.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/task 1 homework/task 1 homework.css" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - task 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 4/Task 2 homework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 4/Task 2 homework/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 4/Task 2 homework/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 4/Task 2 homework/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642445897153</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add lesson 4 - task 2">
+      <created>1642498655378</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642498655378</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +188,7 @@
     <MESSAGE value="add lesson 3 - task 6" />
     <MESSAGE value="add lesson 3 - task 7" />
     <MESSAGE value="add lesson 3 - task 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson 3 - task 8" />
+    <MESSAGE value="add lesson 4 - task 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - task 2" />
   </component>
 </project>
