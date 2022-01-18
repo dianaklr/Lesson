@@ -1,0 +1,43 @@
+#header{
+    background-color: pink;
+    height: 200px;
+    margin: 0 10px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu{
+    width: 40%;
+    background-color: aquamarine;
+    height: 600px;
+}
+
+#content{
+    width: 60%;
+}
+
+#footer{
+    background-color: deepskyblue;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+.h-295{
+    height: 295px;
+}
+.m-10{
+    margin: 10px;
+}
+
+.w-99{
+    width: 99%;
+}
+.w-100{
+    width: 100%;
+}

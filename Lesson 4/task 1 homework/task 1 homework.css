@@ -1,0 +1,51 @@
+#container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.a{
+    width: 99.5%;
+    height: 200px;
+    background-color: pink;
+    margin: 0px;
+}
+
+.b{
+    width: 60%;
+    background-color: aqua;
+}
+
+.c{
+    width: 40%;
+    background-color: burlywood;
+
+
+}
+
+.h-400{
+    height: 400px;
+}
+
+.borderLeftRight{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+#main{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.whiteBorder{
+    border: 3px solid white;
+}
+
+.displayFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
