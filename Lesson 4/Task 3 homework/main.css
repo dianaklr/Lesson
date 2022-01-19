@@ -1,0 +1,43 @@
+
+.w-100{
+    width: 100%;
+}
+.bg-226abb{
+    background-color: #226abb;
+}
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-200px{
+    height: 200px;
+}
+.h-400px{
+    height: 400px;
+}
+
+.w-40{
+    width: 40%;
+}
+.mg-10px{
+    margin: 10px 10px 10px 0px;
+}
+.bg-15457a{
+    background-color: #15457a;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
