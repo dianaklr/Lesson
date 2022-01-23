@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - task 2">
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 3 homework/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 3 homework/main.css" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - task 3">
+      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 1 classwork/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 1 classwork/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 6/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,21 +79,6 @@
       <recent name="$PROJECT_DIR$/task 2" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Html" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Html" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -101,6 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1642081252448</updated>
       <workItem from="1642081253758" duration="12088000" />
+      <workItem from="1642688340171" duration="272000" />
+      <workItem from="1642761654949" duration="6941000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -172,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642498959354</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add lesson 4 - task 3">
+      <created>1642620361533</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642620361533</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +192,7 @@
     <MESSAGE value="add lesson 3 - task 7" />
     <MESSAGE value="add lesson 3 - task 8" />
     <MESSAGE value="add lesson 4 - task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - task 2" />
+    <MESSAGE value="add lesson 4 - task 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - task 3" />
   </component>
 </project>
