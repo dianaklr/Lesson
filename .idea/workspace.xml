@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - task 3">
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 1 classwork/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 1 classwork/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 6/main.css" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - classwork task 1">
+      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2classwork/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2classwork/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +62,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -89,7 +88,7 @@
       <updated>1642081252448</updated>
       <workItem from="1642081253758" duration="12088000" />
       <workItem from="1642688340171" duration="272000" />
-      <workItem from="1642761654949" duration="6941000" />
+      <workItem from="1642761654949" duration="16486000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642620361533</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add lesson 4 - classwork task 1">
+      <created>1642974632583</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642974632583</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +199,7 @@
     <MESSAGE value="add lesson 3 - task 8" />
     <MESSAGE value="add lesson 4 - task 2" />
     <MESSAGE value="add lesson 4 - task 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - task 3" />
+    <MESSAGE value="add lesson 4 - classwork task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - classwork task 1" />
   </component>
 </project>
