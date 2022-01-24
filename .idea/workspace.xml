@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - classwork task 1">
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2classwork/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 4/Task 2classwork/main.css" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - classwork task 2">
+      <change afterPath="$PROJECT_DIR$/Lesson 5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/task 1 homework/Task 1 homework.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/task 1 homework/task 1 homework.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson 5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lesson 5" />
       <recent name="$PROJECT_DIR$/Lesson 4" />
       <recent name="$PROJECT_DIR$/Lesson 3" />
       <recent name="$PROJECT_DIR$/../task 3/Lesson 3" />
@@ -88,7 +91,7 @@
       <updated>1642081252448</updated>
       <workItem from="1642081253758" duration="12088000" />
       <workItem from="1642688340171" duration="272000" />
-      <workItem from="1642761654949" duration="16486000" />
+      <workItem from="1642761654949" duration="17757000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -174,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642974632583</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add lesson 4 - classwork task 2">
+      <created>1643059608600</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643059608600</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +210,7 @@
     <MESSAGE value="add lesson 4 - task 2" />
     <MESSAGE value="add lesson 4 - task 3" />
     <MESSAGE value="add lesson 4 - classwork task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - classwork task 1" />
+    <MESSAGE value="add lesson 4 - classwork task 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - classwork task 2" />
   </component>
 </project>
