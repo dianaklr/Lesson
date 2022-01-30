@@ -4,11 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 4 - classwork task 2">
-      <change afterPath="$PROJECT_DIR$/Lesson 5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 5/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 5/task 1 homework/Task 1 homework.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 5/task 1 homework/task 1 homework.css" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add lesson 5 -  homework task 1">
+      <change afterPath="$PROJECT_DIR$/Lesson 5/Task 2 homework/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/Task 2 homework/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/Task 3 homework/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5/Task 3 homework/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (10).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (11).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (12).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (13).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (14).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (15).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (18).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (19).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (20).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (21).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (22).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (23).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (24).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (5).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (6).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (7).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (8).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE (9).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/IMAGE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/Vector (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/Vector (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/Vector (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/Vector (5).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/Vector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/beigeImg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/beigeImg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +95,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson 5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -68,6 +105,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/images" />
       <recent name="$PROJECT_DIR$/Lesson 5" />
       <recent name="$PROJECT_DIR$/Lesson 4" />
       <recent name="$PROJECT_DIR$/Lesson 3" />
@@ -91,7 +129,8 @@
       <updated>1642081252448</updated>
       <workItem from="1642081253758" duration="12088000" />
       <workItem from="1642688340171" duration="272000" />
-      <workItem from="1642761654949" duration="17757000" />
+      <workItem from="1642761654949" duration="37467000" />
+      <workItem from="1643559566328" duration="8136000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -184,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643059608600</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add lesson 5 -  homework task 1">
+      <created>1643061077499</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643061077499</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add lesson 5 -  homework task 1">
+      <created>1643061140044</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1643061140044</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +264,8 @@
     <MESSAGE value="add lesson 4 - task 3" />
     <MESSAGE value="add lesson 4 - classwork task 1" />
     <MESSAGE value="add lesson 4 - classwork task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson 4 - classwork task 2" />
+    <MESSAGE value="add lesson 5   homework task 1" />
+    <MESSAGE value="add lesson 5 -  homework task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lesson 5 -  homework task 1" />
   </component>
 </project>
