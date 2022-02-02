@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//Task 1
+
+let array = [];
+for(let i = 0; i < 10; i++) {
+    array[i] = Math.floor( Math.random() * 10 );
+}
+document.write(array+ "<br/>")
+document.write(array[0]+array[1]+array[2]+array[3]+array[4]+array[5]+array[6]+array[7]+array[8]+array[9]+ "<br/>")
+
+
+//Task 2
+
+let book = {
+    name: "It",
+    pages:	1138,
+    genre:	"Horror"
+}
+
+//Task 3
+
+let book = {
+    name: "Doctor Sleep",
+    pages:	531,
+    genre:	"Horror",
+    author:	"Stephen King"
+}
+
+//Task 4
+
+let books = [
+    { name: "It", pages:	1138, genre:	"Horror"},
+    {  name: "Doctor Sleep", pages:	531,  genre:	"Horror", author:	"Stephen King"}
+]
+console.log(books[1] +"<br/>")
+
+
+
+//Task 5
+let height = 23
+let width = 10
+let S = height*width
+document.write(S)
+
+
+//Task 6
+let heightC = 10
+let dC = 4
+const p = 3.14
+//у нас є діаметр, але немає радіуса
+let radius = dC/2
+let V = p*radius^2*heightC
+document.write(V*100+" cm")
+
+// Task 7
+
+let n = 3
+let m = 4
+let k = 0
+
+k = Math.sqrt(n**2 + m**2)
+document.write(k)
+
+
+</script>
+</body>
+</html>

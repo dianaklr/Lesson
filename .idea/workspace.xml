@@ -4,47 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add project">
-      <change afterPath="$PROJECT_DIR$/Lesson 8 (Js)/inex.html" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add homework (JS, lesson1)">
+      <change afterPath="$PROJECT_DIR$/Lesson 8 (Js)/classwork.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lesson 8 (Js)/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (10).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (10).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (11).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (11).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (12).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (12).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (13).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (13).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (14).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (14).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (15).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (15).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (18).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (18).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (19).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (19).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (20).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (20).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (21).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (21).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (22).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (22).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (23).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (23).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (24).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (24).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (3).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (3).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (4).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (4).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (5).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (6).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (6).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (7).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (7).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (8).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (8).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE (9).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE (9).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/IMAGE.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/IMAGE.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/Vector (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/Vector (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/Vector (3).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/Vector (3).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/Vector (4).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/Vector (4).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/Vector (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/Vector (5).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/Vector.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/Vector.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/beigeImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/beigeImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/beigeImg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/beigeImg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/icon1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/icon2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/icon3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/icon3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/images/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/images/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project HTML/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643585456058</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add homework (JS, lesson1)">
+      <created>1643793565609</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643793565609</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +216,7 @@
     <MESSAGE value="add lesson 4 - task 3" />
     <MESSAGE value="add lesson 4 - classwork task 1" />
     <MESSAGE value="add project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add project" />
+    <MESSAGE value="add homework (JS, lesson1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homework (JS, lesson1)" />
   </component>
 </project>
