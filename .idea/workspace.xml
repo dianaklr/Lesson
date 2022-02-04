@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add hw (HTML, lesson5)">
-      <change afterPath="$PROJECT_DIR$/Lesson 9/homework.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 9/index.html" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add hw (JS, lesson2)">
+      <change afterPath="$PROJECT_DIR$/Lesson 9/classwork.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 8 (Js)/classwork.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 8 (Js)/classwork.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643802895204</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add hw (JS, lesson2)">
+      <created>1643970001592</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643970001592</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +249,7 @@
     <MESSAGE value="add homework (JS, lesson1)" />
     <MESSAGE value="add classwork (JS, lesson1)" />
     <MESSAGE value="add hw (HTML, lesson5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hw (HTML, lesson5)" />
+    <MESSAGE value="add hw (JS, lesson2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw (JS, lesson2)" />
   </component>
 </project>
