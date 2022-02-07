@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Task 1.
+    let numbers = [1,2,3,4,5]
+    let strings = ['a','b','c','d','e' ]
+    let types = [1,2,3,4,5,'a','b','c','d','e', true, false ]
+
+    console.log(numbers)
+    console.log(strings)
+    console.log(types)
+
+    //Task 2
+    let test = [ , , ]
+
+    test[0] = 'hello '
+    test[1] = 'how '
+    test[2] = 'are '
+    test[3] = 'you '
+    test[4] = '? '
+
+    console.log(test)
+
+    //Task 3
+
+    for(let a=0; a<10;a++){
+        document.write(`<div> hello</div>`)
+    }
+
+
+    for(let a=0; a<10;a++){
+        document.write(`<div> hello  ${a}</div>`)
+    }
+
+    let i = 20
+    while( i>0){
+        i--
+        document.write(`<h1> owu </h1>`)
+    }
+
+    let j = 0
+    while( j<20){
+        j++
+        document.write(`<h1> owu ${j}</h1>`)
+    }
+
+
+    //Task 4
+
+    let a =[1,2,3,4,5,6,7,8,9,10]
+    for(let i=0; i<10;i++){
+        console.log(a[i])
+    }
+    let a =["a","b","c","d","e","f","g","k","i","s"]
+    for(let i=0; i<10;i++){
+        console.log(a[i])
+    }
+    let a =["a","1","2","3",true, false,"g","k","i","s"]
+    for(let i=0; i<10;i++){
+        console.log(a[i])
+    }
+
+     let a =["a","1","2","3",true, false,"g","k" ,true, false,"i","s", 2,4,6,2, ,true, false, ,true, false,]
+
+    for (let i = 0; i < a.length-1; i++){
+        if (typeof a[i] === `boolean`){
+            console.log(a[i])
+        }
+    };
+
+    let a =["a","1","2","3",true, false,"g","k" ,true, false,"i","s", 2,4,6,2, ,true, false, ,true, false,]
+
+    for (let i = 0; i < a.length-1; i++){
+        if (typeof a[i] === `string`){
+            console.log(a[i])
+        }
+    };
+
+    let a =["a","1","2","3",true, false,"g","k" ,true, false,"i","s", 2,4,6,2, ,true, false, ,true, false,]
+
+    for (let i = 0; i < a.length-1; i++){
+        if (typeof a[i] === `number`){
+            console.log(a[i])
+        }
+    };
+
+    //Task 5
+
+    let array = []
+    array[0] = "a"
+    array[1] = "hello"
+    array[2] = true
+    array[3] = 34
+    array[4] = 4343
+    array[5] = 334
+    array[6] = "h"
+    array[7] = false
+    array[8] = true
+    array[9] = 3124
+    for (let i = 0; i < a.length-1; i++){
+            console.log(array[i])
+    };
+
+
+    for (let i = 1; i <=10; i++){
+        console.log(array[i])
+        console.log(i)
+        document.write(i)
+    };
+
+
+    for (let i = 1; i <=100; i++){
+        console.log(array[i])
+        console.log(i)
+        document.write(i)
+    };
+
+
+    for (let i = 1; i <=10;         i+=2 ){
+        console.log(i)
+        document.write(i)
+    };
+
+    for (let i = 1; i <=100; i+=2 ){
+        console.log(i)
+        document.write(i)
+    };
+
+    for (let i = 1; i <=100; i++){
+        if(i%2==0){
+        console.log(i)
+        document.write(i)
+        }
+    };
+
+    for (let i = 1; i <=100; i++){
+        if(i%2==!0){
+            console.log(i)
+            document.write(i)
+        }
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
