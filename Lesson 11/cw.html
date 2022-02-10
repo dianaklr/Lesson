@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Task 1 створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+    function numbers(a,b,c){
+        if (a<b && a<c){
+            document.write(a)
+        }  else if (b<a && b<c){
+            document.write(b)
+        }else if (c<a && c<b){
+            document.write(c)
+        }
+    }
+
+    numbers(+prompt(), +prompt(), +prompt())
+
+    //Task 2 створити функцію яка приймає три числа та виводить найбільше. (Без Math.min!)
+
+    function numbers(a,b,c){
+        if (a>b && a>c){
+            document.write(a)
+        }  else if (b>a && b>c){
+            document.write(b)
+        }else if (c>a && c>b){
+            document.write(c)
+        }
+    }
+
+    numbers(+prompt(), +prompt(), +prompt())
+
+    //Task 3 створити функцію яка повертає найбільше число з масиву
+
+
+    function max(number){
+        let array = number[0]
+        for(let a of number){
+            if(a>array){
+                console.log(a)
+            }else{
+                console.log(array)
+            }
+            return array
+        }
+    }
+
+    //Task 4 створити функцію яка повертає найменше число з масиву
+
+    function max(number){
+        let array = number[0]
+        for(let a of number){
+            if(a<array){
+                console.log(a)
+            }else{
+                console.log(array)
+            }
+            return array
+        }
+    }
+
+
+    //Task 5 створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його
+
+    function array(a,b,c){
+        let array = [a,b,c]
+        let sum =0
+
+        for(let i=0; i<=array.length-1; i++){
+            sum = sum+array[i]
+        }
+        return sum
+    }
+    console.log(array(+prompt(),+prompt(),+prompt()))
+
+// Task 6 створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+    function array(a,b,c){
+        let array = [a,b,c]
+        let sum =0
+
+        for(let i=0; i<=array.length-1; i++){
+            sum = sum+array[i]
+        }
+        return sum
+    }
+    console.log(array(+prompt(),+prompt(),+prompt())/array.length)
+
+// Task 7 створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено)
+
+    function maxNumber(numbers){
+        let min = arguments[0]
+        let max = arguments[0]
+
+        for(const element of arguments){
+            if(element>arguments){
+                max = element
+
+            }else{
+                min = element
+            }
+        }
+        return min
+        console.log(max)
+
+    }
+
+
+let count = +prompt(`введіть загальну к-ть значень`)
+    for(let i=0; i<count; i++)
+    {
+        maxNumber(+prompt())
+    }
+
+//Task 8 створити функцію яка заповнює масив рандомними числами
+
+
+    function  randMath(a){
+    let r = Math.round(Math.random()*100)
+        let array = [ ]
+
+        for(let i=0; i<a-1; i++){
+            array.push(r)
+        }
+        return array
+
+    }
+    console.log(randMath(+prompt()))
+
+
+
+// Task 9 створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+    let limit  = +prompt(`Встановіь ліміт значень`)
+    let r = Math.round(Math.random()*limit)
+    function ran(number){
+        let array = [ ]
+        for(let i=0; i<limit-1; i++){
+            array.push(r)
+        }
+        return array
+    }
+//Task 10 Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+
+
+
+    function mirroring(a,b,c){
+        let math = [a,b,c]
+        for (let i = math.length-1; i>=0;i--){
+            console.log(math[i])
+        }
+        return math
+
+    }
+
+    mirroring(+prompt(`Перше значення масиву`),+prompt(`Друге значення масиву`),+prompt(`третє`))
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
