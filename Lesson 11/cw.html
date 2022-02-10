@@ -38,31 +38,35 @@
     //Task 3 створити функцію яка повертає найбільше число з масиву
 
 
-    function max(number){
-        let array = number[0]
-        for(let a of number){
-            if(a>array){
-                console.log(a)
-            }else{
-                console.log(array)
+    function maxNumber(numbers){
+
+        let max = arguments[0]
+
+        for(const element of arguments){
+            if(element>max){
+                max = element
             }
-            return array
         }
+        return max
     }
+
+    maxNumber(8,9,2,3,5)
 
     //Task 4 створити функцію яка повертає найменше число з масиву
 
-    function max(number){
-        let array = number[0]
-        for(let a of number){
-            if(a<array){
-                console.log(a)
-            }else{
-                console.log(array)
+
+    function maxNumber(numbers){
+        let min = arguments[0]
+
+        for(const element of arguments){
+             if(min>element){
+                min = element
             }
-            return array
         }
+        return min
     }
+
+    maxNumber(8,9,2,3,5)
 
 
     //Task 5 створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його
@@ -98,24 +102,18 @@
         let max = arguments[0]
 
         for(const element of arguments){
-            if(element>arguments){
+            if(element>max){
                 max = element
 
-            }else{
+            }else if(min>element){
                 min = element
             }
         }
-        return min
         console.log(max)
-
+        return min
     }
 
-
-let count = +prompt(`введіть загальну к-ть значень`)
-    for(let i=0; i<count; i++)
-    {
-        maxNumber(+prompt())
-    }
+    maxNumber(8,9,2,3,5)
 
 //Task 8 створити функцію яка заповнює масив рандомними числами
 
@@ -146,8 +144,6 @@ let count = +prompt(`введіть загальну к-ть значень`)
         return array
     }
 //Task 10 Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-
-
 
 
     function mirroring(a,b,c){

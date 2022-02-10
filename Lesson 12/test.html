@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // let users =[
+    //     {name:'Alex', age:27, status: true},
+    //     {name:'Aaaex', age:27, status: true},
+    //     {name:'Alsdex', age:27, status: true}
+    // ]
+    //
+    // console.log(users[0].status)
+
+ //Спосіб 1
+
+    let c = (a,b) => {
+        return a+b
+    };
+
+    console.log(c(100,200))
+
+    //Спосіб 2
+    let d = function (l,k){
+        return l+k
+    }
+
+    console.log(d(100,100))
+
+    //Спосіб 3
+
+    let c = (a,b) => a+b
+    console.log(c(100,200))
+
+
+    //Анонімні функції
+
+        (function (args){
+            console.log('some bla bla bla', args)
+        }())  // <- функція викличе сама себе
+
+
+    //функція як об єкт: називається колбек(відповідь)
+
+    function abcd(a,b,fn){
+        console.log(a)
+        console.log(b)
+        console.log(fn)
+        fn()
+    }
+
+    abcd(10,20, function (){console.log('hello')})
+
+</script>
+
+</body>
+</html>
