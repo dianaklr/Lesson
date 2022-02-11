@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Task 1 створити функцію яка обчислює та повертає площу прямокутника
+
+
+    let S = (a,b) => {
+        return a*b
+    }
+        console.log(S(10,20))
+
+    //Task 2 створити функцію яка обчислює та повертає площу кола
+
+    const pi = 3.14
+
+    let C = (r) => {
+        return pi*r**2
+    }
+    console.log(C(10))
+
+
+    //Task 3 cтворити функцію яка обчислює та повертає площу циліндру
+
+    const pi = 3.14
+
+    let Z = (r, h) => {
+        return 2*(pi*r*(h+r))
+    }
+    console.log(Z(12, 17))
+
+
+    //Task 4 створити функцію яка приймає масив та виводить кожен його елемент
+
+
+    let array = [1,2,3]
+
+    let A = a => {
+        for(const allElemnts of array) {
+            console.log(allElemnts)
+        }
+
+    }
+        A(array)
+
+    //Task 5 створити функцію яка  створює параграф з текстом. Текст задати через аргумент
+
+
+    function text (anyText){
+        document.write(`<p>${anyText}</p>`)
+    }
+        text(`la la la`)
+
+        //or
+
+    let text  = anyText => document.write(`<p>${anyText}</p>`)
+    text(`la la la`)
+
+    //Task 6 створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+
+    let list = p=> {
+        document.write(`<ul>`)
+        for(let z = 0;z<3; z++ ){
+            document.write(`<li>${p}</li>`)
+        }
+        document.write(`</ul>`)
+    }
+
+    list(`privet`)
+
+    //- створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+    // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+
+    let list = p=> {
+        document.write(`<ul>`)
+        for(let z = 0;z<3; z++ ){
+            document.write(`<li>${p}</li>`)
+        }
+        document.write(`</ul>`)
+    }
+
+    list(`privet`)
+
+    //Task 8 створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+
+
+    let lists = (n, t, b) => {
+        let s=[n, t, b]
+        console.log(s)
+    }
+    lists(1,`privet`, true)
+
+
+   // Task 9 створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+    // Для кожного об'єкту окремий блок
+
+
+
+    let users =[
+        {name:'Alex', age:27, id: 123},
+        {name:'Arnold', age:47, id: 456},
+        {name:'Ratush', age:17, id: 789},
+    ]
+
+
+    let names = list => {
+        document.write(`<div>${list.name}</div>`)
+        document.write(`<div>${list.age}</div>`)
+        document.write(`<div>${list.id}</div>`)
+    }
+
+    for (let j = 0; j <=users.length - 1; j++) {
+        names(users[j])
+    }
+
+
+    // console.log(users[0].status)
+
+
+
+
+
+</script>
+
+</body>
+</html>
