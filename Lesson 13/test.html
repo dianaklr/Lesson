@@ -22,6 +22,154 @@
     let  a = "hello"
     let split = a.split('l')
     console.log(split)
+
+    let array = ['one', 'two', 'three']
+    let newArr = array.splice(1,2)// видалення елементів з певного сегмента (з якого елемента, скільки видалити)
+    let newC =newArr.concat([1,2,3,4,5])
+    console.log(newC)
+
+    console.log(array.includes('hello')) // перевіряє, чи масив мічтить вказаний елемент
+
+    let users = [
+    { name: "Вася", age: 25 },
+    { name: "Петя", age: 30 },
+    { name: "Маша", age: 28 }
+    ]
+
+    //можна використати ітерацію
+
+    for(const user of users){
+        console.log(user)
+    }
+
+    // можна метод forEach()
+    users.forEach(function (user){ //колбек функція
+        console.log(user) // кф - з нашими аргументами виконай оцю дію
+    })
+
+    // коротший спосіб через forEach() та кф
+
+    users.forEach(value => console.log(value)) // стрілочна ф
+
+    let filter = users.filter(user => user.age===25) // сортування елементів за вказаними ознаками
+    console.log(filter)
+
+    console.log(users.filter(value => value.age >= 30)) // фільтр повертає масив
+
+
+
+
+    let array = ['one', 'two', 'three']
+
+
+    let ab = array.map(value => value+'|')     // до існуючих значень масиву добавиться значення
+    console.log(ab)
+
+
+    let users = [
+        { name: "Вася", age: 25 },
+        { name: "Петя", age: 30 },
+        { name: "Маша", age: 28 }
+    ]
+
+    // map дозволяє під час ітерації змінювати об єкти, і з цими зміненими об єктами формувати новий масив
+    let map = users.map(function (user, index){
+        console.log(index);
+        user['id'] = index+ 1; // параметр з функції юзер, йому визначається поле id
+        return user;
+    })
+    console.log(map);
+    console.log(users);
+
+    //сортування
+
+
+    let users = [
+        { name: "Вася", age: 25 },
+        { name: "Петя", age: 30 },
+        { name: "Маша", age: 28 }
+    ]
+
+    console.log(users.sort(function (current, next){ // звіряє 0 і 1 елемент, 1 і 2 і тд
+        return current.age-next.age;
+    }))
+
+// сортування за іменем, але в короткому записі
+
+
+
+    let users = [
+        { name: "Вася", age: 25 },
+        { name: "Аня", age: 25 },
+        { name: "Петя", age: 30 },
+        { name: "Маша", age: 28 }
+    ]
+
+    users.sort((a,b)=>a.name.length - b.name.length) // від коротшого до довшого
+    users.sort((a,b)=>b.name.length - a.name.length) // від довшого до коротшого
+
+
+   console.log(users.find(value => value.age===25)) // знайти обєкт з вказаними характеристиками
+   console.log(users.every(value => typeof value.name === 'string')) // знайти обєкт з вказаними характеристиками
+
+
+// array.prototype.flat()   flat - плоскість, площина, розкласти х-рівневі масиви  в площину
+
+    let matrix=[
+        [1,2,3],
+        [11,22,33]
+    ]
+
+    let newMatrix = matrix.flat()
+    console.log(newMatrix)
+
+
+    let matrix=[
+        [1,2,3],
+        [11,22,33
+        ['a', 'b']
+        ]
+    ]
+
+    let newMatrix = matrix.flat(2) // на глибину 2
+    console.log(newMatrix)
+
+
+    //flatMap() - дозволяє не лише розкласти, але і змінити масив
+    let matrix=[
+        [1,2,3],
+        [11,22,33,
+            ['a', 'b']
+        ]
+    ]
+
+    console.log(matrix.flatMap(value => value+1) );
+    // if (value typeof object && array){
+    // return value
+    // }
+
+
+    //reduce() - зменшення
+
+    let users = [
+        { name: "Вася", age: 25, status:true},
+        { name: "Аня", age: 25,  status:true},
+        { name: "Петя", age: 30, status:false},
+        { name: "Маша", age: 28, status:true}
+    ]
+    console.log(users.reduce((basket, user) =>{
+        if(user.status){
+            basket.statusTrue.push(user);
+        }else{
+            basket.statusFalse.push(user);
+        }
+        return basket;
+    }, {statusTrue:[], statusFalse:[]}));
+
+
+
+
+
 </script>
 </body>
 </html>

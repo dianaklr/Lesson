@@ -37,8 +37,10 @@ document.write(c.toLowerCase())
 //Task 4  Є "брудна" стрінга let str = ' dirty string
 
 let ds =  ' dirty string   '
-let clear = ds.replaceAll(' ', '')
+let clear = ds.trim()
 console.log(clear)
+
+//метод let ds =  ' dirty string   ' - видаляє
 
 
 /*
@@ -90,8 +92,10 @@ upper('hello')
 
 //Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
 
+/*
 function upperFl(str){
     let split = str.split(' ')
+
     let d
     for(let a = 0; a<split.length; a++){
     //return ((split[a].charAt(0)).toUpperCase())+ split.slice(1)
@@ -100,7 +104,12 @@ function upperFl(str){
     return d
 }
 upperFl('hello how are you')
+*/
 
+let capitalize = (str) => {
+    return str.split(' ').map(word=>word[0].charAt(0).toUpperCase()+word.slice(1)).join(' ');
+};
+document.write(capitalize('hi you are welcome'));
 
 
 
