@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let user={
+    id:1,
+    name: 'kokos'
+}
+console.log(user)
+
+user.surname='abricosov';
+console.log(user)
+
+user['age'] = 31 //можна і так додавати (це -  ключ)
+console.log(user)
+
+//example 2
+
+let obj = {}
+let fields = ['id', 'name', 'surname']
+for(const field of fields){
+    console.log(field)
+    obj[field] = 'xxx'
+}
+
+console.log(obj)
+
+
+// динамічність полів, склеєння масивів
+let obj = {};
+let fields = ['id', 'name', 'surname'];
+let values = [1, 'kokos', 'abrikos'];
+
+for(let i=0; i<values.length; i++){
+    obj[fields[i]] = values[i];
+}
+console.log(obj)
+
+
+// видалення
+
+let user={
+    id:1,
+    name: 'kokos'
+}
+delete user.id;
+
+
+//використання об єкта
+
+let user={
+    id:1,
+    name: 'kokos',
+    surname:'abrikos'
+}
+
+function x(obj){
+    return `hello my name is ${obj.name}, ${obj.surname}`
+}
+
+console.log(x(user))
+
+
+// якщо я хочу привязати цю функцію лише до цього об єкта - можна її прописати в обєкті
+let user={
+    id:1,
+    name: 'kokos',
+    surname:'abrikos',
+    x: function (){
+    return `hello my name is ${user.name}, ${user.surname}`
+}
+}
+console.log(user.x())
+
+// this
+
+let user={
+    id:1,
+    name: 'kokos',
+    surname:'abrikos',
+    x: function (){
+        return `hello my name is ${this.name}, ${this.surname}`
+    }
+}
+console.log(user.x())
+
+// стрілочна функція
+
+let user={
+    id:1,
+    name: 'kokos',
+    surname:'abrikos',
+    x:() =>{        // стрілочні функції не мають контексту this, вони зсилаються на більш глобальний об єкт - window
+        console.log(this);
+        console.log(`hello my name is ${this.name}, ${this.surname}`)
+    }
+}
+console.log(user.x())
+
+// замикання
+
+function outer(){
+    let x = 0
+    function inner(){
+        x++
+        return x
+    }
+    inner()
+}
+
+outer()
+
+function outer(){
+    let x = 0
+    function inner(){
+        return ++x
+    }
+    inner()
+}
+
+let c = outer()
+console.log(outer())
+console.log(outer())
+console.log(outer())
+console.log(outer())
+// Отже, замикання - це можливість внутрішньої функції зберігати посилання на зовнішню змінну
+
+
+//
+
+
+function userCreator(name, age){
+    let obj = {name: name, age:age} // типу інкапсуляція (в js немає чистої інкапсуліції) всі поля закриті від змін, і навіть не можна подивитись
+
+    let ObjManioulator = {
+        getName: function (){  // cтворили об єкт який здатний доступитись до цього поля і надати інформацію про obj
+                return obj.name
+            },
+        }
+        return ObjManioulator
+}
+let m = userCreator('ivan', 44)
+console.log(m.getName())
+
+
+//стрілочні функції бі лайк
+
+
+function userCreator(name, age){
+    let obj = {name: name, age:age} // типу інкапсуляція (в js немає чистої інкапсуліції) всі поля закриті від змін, і навіть не можна подивитись
+        return{
+        getName: function (){  // cтворили об єкт який здатний доступитись до цього поля і надати інформацію про obj
+            return obj.name
+        },
+
+            getAge: function (){  // cтворили об єкт який здатний доступитись до цього поля і надати інформацію про obj
+                return obj.age
+            },
+    }
+}
+let m = userCreator('ivan', 44)
+console.log(m.getName())
+
+//стрілочні функції бі лайк - спроба 2
+
+
+function userCreator(name, age){
+    let obj = {name: name, age:age} // типу інкапсуляція (в js немає чистої інкапсуліції) всі поля закриті від змін, і навіть не можна подивитись
+    return{
+        getName: ()=> {return obj.name},
+        getAge: ()=>{ return obj.age},
+        setAge: (newAge)=>{ obj.age = newAge},
+    }
+}
+let m = userCreator('ivan', 44)
+console.log(m.getName())
+m.setAge(54)
+
+// пс - ми за допомогоб замикань зробили приватний обєкт, яким ми маніпулюємо через повернення обєкта. можна додавати дод умови
+
+// функці-конструктори прописуються з великої літери
+
+function User(id, name){
+this.name = name //майбутній об єкт, який створиться
+this.id = id //майбутній об єкт, який створиться
+}
+
+let user1 = new User(1, 'kokos')
+let user2 = new User(2, 'keokos')
+
+console.log(user1)
+console.log(user2)
+
+
+// реалізуємо ооп там', де його немає
+
+function User(id, name){
+    this.name = name //майбутній об єкт, який створиться
+    this.id = id //майбутній об єкт, який створиться
+}
+       function x(){
+            return `hello, its ${this.name}`
+         }
+
+
+let user1 = new User(1, 'kokos')
+
+
+//console.log(user1)
+console.log(user1.x)
+
+
+//Cтворення класу обєкта
+
+class Person{
+    constructor( id, name, skill, ) {
+        this.id = id;
+        this.name = name;
+        this.skill = skill;
+    }
+}
+
+let person = new Person(1, 'diana', 'js')
+console.log(person)
+
+
+
+// розщирення існуючого класу
+
+class Car{
+    constructor(model, power) {
+        this.model = model;
+        this.power = power;
+    }
+}
+
+class SuperCar extends Car{
+constructor(module, power, type) {
+    super(module, power); // за допомогою вказівки супер викликаємо вище створений конструктор
+    this.type = type
+
+}
+
+}
+let superCar = new SuperCar('opel', 123)
+
+
+//в дочірньому класі - this, в батьківському super
+</script>
+</body>
+</html>
