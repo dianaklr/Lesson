@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="product">
+        <h2>loren loren loren</h2>
+        <p>loren loren loren</p>
+    </div>
+
+    <div class="product" id="x">
+        <h2>loren loren loren</h2>
+        <p>loren loren loren</p>
+    </div>
+</div>
+
+
+<script>
+
+    console.log(document);
+
+    let metaList = document.head.getElementsByTagName('meta');
+
+    for(const metaListElement of metaList ){
+        console.log('------start-----')
+        console.log(metaListElement)
+        console.log('------end-----')
+    }
+
+let product = document.getElementsByClassName('product');
+    for(const productDiv of product){
+        console.log(productDiv)
+       // product.classList.add('x'); // додай до елемента клас х
+       // product.classList.remove('x'); // видали клас х
+        productDiv.style.background='yellow';
+    }
+
+
+    let h1OfBlock = product[0].children[0]
+    console.log(h1OfBlock)
+    h1OfBlock.innerText = ' hello'
+    h1OfBlock.innerHTML = '<i> hello </i>'
+
+
+   //  // qwery selector дозволить нам користуватись css-подібною конструкцією користуватись, але поврне нам лиш елемент - тільки перший, який він зустріне
+   //  let querryList = document.querySelector('body>.wrap>.product >') // поверне html колекцію
+   //  // або
+   //  console.log(querryList)
+   //  let querryList1 = document.querySelectorAll('body>.wrap>.product >') // поверне список вузлів (ноди)
+   // console.log(querryList1)
+
+    let elementX = document.querySelectorAll('#x')
+    console.log(elementX)
+
+
+    //fromAPI
+
+
+
+</script>
+
+</body>
+</html>
