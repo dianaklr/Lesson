@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 150px;
+            background-color: beige;
+            border-radius: 20px;
+        }
+        .box img{
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--<div class="products">-->
+<!--    <div class="product">-->
+<!--        <h2>title price</h2>-->
+<!--        <img src="image" alt="">-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="products"></div>
+<script>
+let products = [
+    {
+        title:'milk',
+        price:22,
+        image: 'https://media.istockphoto.com/vectors/cartoon-milk-carton-vector-illustration-vector-id1151948324?k=20&m=1151948324&s=170667a&w=0&h=tKNYGqQs3kh5ZXd5OmFZefgXz8JIkYRWNKDiBxhx418='
+    },
+    {
+        title:'juice',
+        price:29,
+        image: 'https://www.collinsdictionary.com/images/full/fruitjuice_148446767.jpg'
+    },
+
+    {
+        title:'tea',
+        price:15,
+        image: 'https://myhaneerbil.com/wp-content/uploads/960x0.jpg'
+    },
+]
+let productsDiv = document.getElementsByClassName('products')[0]
+for (const product of products) {
+   // console.log(product)
+
+    let productDiv = document.createElement('div')
+    productDiv.classList.add('box')
+
+    productsDiv.appendChild(productDiv)
+
+    let h2 = document.createElement('h2')
+    h2.innerText = `${product.title} ${product.price}`
+
+    productDiv.appendChild(h2)
+
+    let imageElement = document.createElement('img')
+    imageElement.src = product.image
+    imageElement.alt = `${product.title}`
+    productDiv.appendChild(imageElement)
+
+}
+
+
+
+</script>
+</body>
+</html>

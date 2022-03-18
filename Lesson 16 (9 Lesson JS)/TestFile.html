@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="target"></div>
+<div class="point1"></div>
+<div class="point2"></div>
+
+
+<script>
+
+    let h2 = document.createElement('h2');
+    document.body.append(h2) // декілька елементів через кому
+    document.body.appendChild(h2) // тільки один елемент
+
+
+    h2.innerText = 'lesson 9'
+
+   let targets =  document.getElementsByClassName('target') // повертає масив (html-колекцію)
+    let target = targets[0]
+    target.append(h2)
+
+    //клонуємо об'єкт
+    let cloneNodeH2 = h2.cloneNode(true); //клонування об'єкта: в дужках є бул параметр (глибина, чи копіювати з глибиною)
+    target.append(cloneNodeH2) // додати це й ж об'єкт
+
+    // створюємо елементи
+
+    let wrap = document.createElement('div'); // створення div
+        wrap.classList.add('wrap' ); // div отримує клас wrap
+
+    let outer = document.createElement('div'); // створення div
+        outer.classList.add('outer' ); // div отримує клас wrap
+
+    let box1 = document.createElement('div');
+    box1.classList.add('inner' );
+    box1.classList.add('box1' );
+
+
+    let box2 = document.createElement('div');
+    box2.classList.add('inner' );
+    box2.classList.add('box2' );
+
+
+    wrap.append(outer) // в елемент з класом wrap було вкладено елемент з класом outer
+    outer.append(box1,box2)
+    document.body.append(wrap)
+
+    // дістаємо сусідній елемент
+    let point1 = document.getElementsByClassName('point1')[0]
+    console.log(point1.nextElementSibling) // виводить наступний елемент
+    console.log(point1.previousElementSibling) // виводить попередній елемент
+    console.log(point1.parentElement);// дізнатись батьківський елемент
+
+    // створити силку на щось
+    let ancor =document.createElement('a')
+    ancor.href='https://www.youtube.com/watch?v=bgBQbPClU2Y'
+    ancor.innerText='site'
+    document.body.append(ancor)
+
+
+
+</script>
+
+</body>
+</html>
