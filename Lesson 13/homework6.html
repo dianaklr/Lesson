@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /*
+    - Знайти та вивести довижину настипних стрінгових значень
+    'hello world', 'lorem ipsum', 'javascript is cool'
+    - Перевести до великого регістру наступні стрінгові значення
+    'hello world', 'lorem ipsum', 'javascript is cool'
+    - Перевести до нижнього регістру настипні стрінгові значення
+    'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+    - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+    */
+
+    let h = "hello world"
+    let l = "lorem ipsum"
+    let j = "javascript is cool"
+
+    console.log(h.length);
+    console.log(l.length);
+    console.log(j.length);
+
+    console.log(h.toUpperCase());
+    console.log(l.toUpperCase());
+    console.log(j.toUpperCase());
+
+    let h_b = "HELLO WORLD"
+    let l_b = "LOREM IPSUM"
+    let j_b = "JAVASCRIPT IS COOL"
+
+    console.log(h_b.toLowerCase());
+    console.log(l_b.toLowerCase());
+    console.log(j_b.toLowerCase());
+
+    let str = ' dirty string   '
+    console.log(str.replace(' ', ''))
+
+/*
+    Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+    let str = 'Ревуть воли як ясла повні';
+    let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+*/
+
+    let strTest = 'Ревуть воли як ясла повні';
+
+    function stringToarray(str){
+        console.log(str.split(' '));
+    }
+    stringToarray(strTest)
+
+/*
+є масив чисел [10,8,-7,55,987,-1011,0,1050,0] .
+за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+ */
+
+    let numbers = [10,8,-7,55,987,-1011,0,1050,0]
+
+    let mapArray = numbers.map(function (number){
+        let str = []
+        str = number.toString();
+        return str;
+    })
+    console.log(mapArray)
+
+/*
+створити функцію sortNums(direction), яка прймає масив чисел,
+та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+let nums = [11,21,3];
+sortNums(nums,'ascending') // [3,11,21]
+sortNums(nums,'descending') // [21,11,3]
+*/
+
+    let nums = [11,21,3];
+
+    function sortNums(nums, direction){
+        if(direction === 'ascending'){
+            nums.sort((a,b) => a-b)
+        }else if(direction === 'descending'){
+            nums.sort((a,b) => b-a)
+        }
+        return nums
+    }
+
+
+    console.log(sortNums(nums,'ascending'))
+    console.log(sortNums(nums,'descending'))
+
+/*є масив
+
+ -- відсортувати його за спаданням за monthDuration
+ -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+
+ */
+
+    let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+    ];
+
+    console.log(coursesAndDurationArray.sort((a,b) => (a.monthDuration-b.monthDuration)))
+    console.log(coursesAndDurationArray.filter(value => value.monthDuration>5))
+
+
+/*
+описати колоду карт
+ - знайти піковий туз
+ - всі шістки
+ - всі червоні карти
+ - всі буби
+ - всі трефи від 9 та більше
+{
+    cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+    value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+    color:'', // 'red','black'
+}*/
+    let cards = [
+        {title: 'heart', value: 6, color: 'red'},
+        {title: 'heart', value: 7, color: 'red'},
+        {title: 'heart', value: 8, color: 'red'},
+        {title: 'heart', value: 9, color: 'red'},
+        {title: 'heart', value: 10, color: 'red'},
+        {title: 'heart', value: 'ace', color: 'red'},
+        {title: 'heart', value: 'jack', color: 'red'},
+        {title: 'heart', value: 'queen', color: 'red'},
+        {title: 'heart', value: 'king', color: 'red'},
+        {title: 'heart', value: 'joker', color: 'red'},
+
+        {title: 'spade', value: 6, color: 'black'},
+        {title: 'spade', value: 7, color: 'black'},
+        {title: 'spade', value: 8, color: 'black'},
+        {title: 'spade', value: 9, color: 'black'},
+        {title: 'spade', value: 10, color: 'black'},
+        {title: 'spade', value: 'ace', color: 'black'},
+        {title: 'spade', value: 'jack', color: 'black'},
+        {title: 'spade', value: 'queen', color: 'black'},
+        {title: 'spade', value: 'king', color: 'black'},
+        {title: 'spade', value: 'joker', color: 'black'},
+
+        {title: 'diamond', value: 6, color: 'red'},
+        {title: 'diamond', value: 7, color: 'red'},
+        {title: 'diamond', value: 8, color: 'red'},
+        {title: 'diamond', value: 9, color: 'red'},
+        {title: 'diamond', value: 10, color:'red'},
+        {title: 'diamond', value: 'ace', color: 'red'},
+        {title: 'diamond', value: 'jack', color: 'red'},
+        {title: 'diamond', value: 'queen', color: 'red'},
+        {title: 'diamond', value: 'king', color: 'red'},
+        {title: 'diamond', value: 'joker', color: 'red'},
+
+        {title:  'clubs', value: 6, color: 'black'},
+        {title:  'clubs', value: 7, color: 'black'},
+        {title:  'clubs', value: 8, color: 'black'},
+        {title:  'clubs', value: 9, color: 'black'},
+        {title:  'clubs', value: 10, color: 'black'},
+        {title:  'clubs', value: 'ace', color: 'black'},
+        {title:  'clubs', value: 'jack', color: 'black'},
+        {title:  'clubs', value: 'queen', color: 'black'},
+        {title:  'clubs', value: 'king', color: 'black'},
+        {title:  'clubs', value: 'joker', color: 'black'},
+
+    ];
+
+    console.log(cards.find(value => value.title === 'spade' && value.value === 'ace' && value.color === 'black'));
+
+        for(const elements of cards) {
+            if (elements.value === 6) {
+                console.log(elements)
+            }
+        }
+
+        for(const elements of cards) {
+        if (elements.color === 'red') {
+            console.log(elements)
+            }
+        }
+
+    for(const elements of cards) {
+        if (elements.color === 'red') {
+            console.log(elements)
+        }
+    }
+
+    for(const elements of cards) {
+        if (elements.title === 'diamond') {
+            console.log(elements)
+        }
+    }
+
+    for(const elements of cards) {
+        if (elements.title === 'clubs' && elements.value !== 6  && elements.value !== 7 && elements.value !== 8) {
+            console.log(elements)
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

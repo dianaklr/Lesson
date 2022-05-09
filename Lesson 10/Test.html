@@ -6,8 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+        }
+
+    </style>
 </head>
 <body>
+
+
 
 <script>
 
@@ -37,7 +45,85 @@
     }
 */
 
+    //1
+    for (let i = 0; i<10; i++){
+        document.write(`<div> la-la-la</div>`)
+    }
 
+    //2
+    for(let a = 0; a<10; a++){
+        document.write(`<div> la-la-la - ${a}</div>`)
+
+    }
+
+    //3
+    document.write(`<ul>`)
+let lis=["html", "java", "python", "js", "react"]
+
+    for (const li of lis) {
+        document.write(`<li>${li}</li>`)
+
+    }
+    document.write(`</ul>`)
+
+//4
+
+    let products = [
+        {
+            title: 'milk',
+            price: 22,
+            image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+        },
+        {
+            title: 'juice',
+            price: 27,
+            image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+        },
+        {
+            title: 'tomato',
+            price: 47,
+            image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+        },
+        {
+            title: 'tea',
+            price: 15,
+            image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+        },
+    ];
+
+    for (const product of products) {
+        document.write(`
+                <div className="product-card">
+                    <h3 className="product-title">${product.title}. Price -${product.price} </h3>
+                    <img src="${product.image}" alt="" className="product-image">
+                </div>
+        `)
+    }
+
+    //5
+
+
+    let numbers = [1,5,7,22,55,33,54,65,33,21,56,43,66,55,34,696,543,2345,556,4431]
+    for (let a = 0; a<numbers.length-1; a++) {
+        if (numbers[a]%3 === 0){
+            numbers[a]='okten'
+        }
+    }
+
+    console.log(numbers)
+
+    //6
+
+    let arr = []
+
+    let val = 0
+    for(let a = 0; a<100; a+=2){
+    val+=2
+        arr[a] =  val;
+    }
+
+
+    console.log(arr)
 
 </script>
 

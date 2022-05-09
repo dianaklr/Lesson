@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+    //task 1
+    let arr = [1,2,3,4,5,6,7,8,9,10, 11]
+// a - тимчасова ячейка
+    for(a of arr){
+       console.log(a)
+    }
+
+*/
+
+//task 2
+/*
+let arr = [1,2,3,4,5,6,7,8,9,10, 11]
+document.write('<ul>')
+for(a of arr){
+    document.write(`<li>${a}</li>`)
+
+}
+document.write('</ul>')
+
+*/
+//task 3
+
+ let users = [{
+     name: 'vasya',
+     age: 31,
+     status: false,
+     address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+ }, {
+     name: 'petya',
+     age: 30,
+     status: true,
+     address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+ }, {
+     name: 'kolya',
+     age: 29,
+     status: true,
+     address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+ }, {
+     name: 'olya',
+     age: 28,
+     status: false,
+     address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+ }, {
+     name: 'max',
+     age: 30,
+     status: true,
+     address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+ }, {
+     name: 'anya',
+     age: 31,
+     status: false,
+     address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+ }, {
+     name: 'oleg',
+     age: 28,
+     status: false,
+     address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+ }, {
+     name: 'andrey',
+     age: 29,
+     status: true,
+     address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+ }, {
+     name: 'masha',
+     age: 30,
+     status: true,
+     address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+ }, {
+     name: 'olya',
+    age: 31,
+     status: false,
+     address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+ }, {
+     name: 'max',
+     age: 31,
+     status: true,
+     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+ }];
+
+/*
+document.write(`<div class="userBox">`)
+
+for (const user of users) {
+    if(user.age > 30){
+    document.write(`<p>${user.name}</p>`)
+}
+}
+    document.write(`</div>`)
+ */
+
+document.write(`<ol class="userBox">`)
+
+for (const user of users) {
+    if(user.age > 30){
+        document.write(`<li>
+                name - ${user.name}
+                status - ${user.status}
+                address - ${user.address}
+                 </li>`)
+    }else{
+        document.write(`<p>List 2</p>`)
+        document.write(`<li>
+                name - ${user.name}
+                status - ${user.status}
+                address - ${user.address}
+                 </li>`)
+
+
+
+    }
+}
+document.write(`</ol>`)
+
+
+</script>
+
+</body>
+</html>

@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add hw (JS, lesson9)">
-      <change afterPath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/cw.html" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add cw (JS, lesson9)">
+      <change afterPath="$PROJECT_DIR$/Lesson 12/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 12/testFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 13/Array.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 13/String.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 13/homework6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 14 (7 Lesson JS)/classwork.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 8 (Js)/js 2 if-else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 9/test loops.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 10/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 10/Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 11/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 11/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/cw.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/cw.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +105,13 @@
       <workItem from="1645087833478" duration="37710000" />
       <workItem from="1646588345139" duration="16457000" />
       <workItem from="1647371285002" duration="17332000" />
-      <workItem from="1647686724152" duration="553000" />
+      <workItem from="1647686724152" duration="2019000" />
+      <workItem from="1649684747775" duration="216000" />
+      <workItem from="1650189827920" duration="37000" />
+      <workItem from="1650365561650" duration="3646000" />
+      <workItem from="1650986331655" duration="7797000" />
+      <workItem from="1651133658837" duration="924000" />
+      <workItem from="1651654845490" duration="14453000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -356,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647625070199</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add cw (JS, lesson9)">
+      <created>1648136981702</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648136981702</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add lesson 3 - task 8" />
     <MESSAGE value="add lesson 4 - task 2" />
     <MESSAGE value="add lesson 4 - task 3" />
     <MESSAGE value="add lesson 4 - classwork task 1" />
@@ -399,6 +421,7 @@
     <MESSAGE value="add hw (JS, lesson8)" />
     <MESSAGE value="add cw (JS, lesson8)" />
     <MESSAGE value="add hw (JS, lesson9)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hw (JS, lesson9)" />
+    <MESSAGE value="add cw (JS, lesson9)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cw (JS, lesson9)" />
   </component>
 </project>

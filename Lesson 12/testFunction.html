@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+/*
+
+Різниця між об'ктами і примітивами
+При переприсвоїнні значень примітив отримує нове значення
+При переприсвоїнні значень об'єкт є силочним типом, тому два параметри отримають нове значення
+*/
+    let arr = []
+
+    function a(array){
+        array[0]=1000
+    }
+    a(arr)
+    console.log(arr)
+
+//стрілочна функція
+ let calc = (a,b)=>{
+        return a+b
+ }
+
+console.log(calc(10, 20));
+
+    // ще коротше
+// sft+cnt+j - в один рядок
+
+let calc2 = (a,b)=> a+b
+
+console.log(calc2(10, 20));
+
+//або
+
+let calc3 = (a,b)=> console.log(a + b)
+calc3(10, 20);
+
+// анонімні функції, функції які викликають самі себе - self invoke function
+
+    (function (msg){
+        console.log(msg)
+    }('eugen'))
+
+// функція у функції
+
+function calcmega (a,b,calback){
+        let result = calback(a,b);
+        return result;
+}
+
+let num = calcmega(100,3, function (a,b){
+    return a*b;
+});
+
+console.log(num)
+
+// робота з фільтрами
+
+
+let users =[
+    {name: 'anna', age: 31, status: false},
+    {name: 'ivan', age: 30, status: false},
+    {name: 'artur', age: 20, status: true},
+]
+
+let oldPeople = users.filter(function (elements){
+    return elements.age>30
+})
+console.log(oldPeople)
+
+
+
+let users2 =[
+    {name: 'anna', age: 31, status: false},
+    {name: 'ivan', age: 30, status: false},
+    {name: 'artur', age: 20, status: true},
+]
+
+
+function filtrationFunction(array){
+    let newList = []
+    for (const elements of array) {
+        if(elements.age<=30){
+            newList.push(elements)
+        }
+    }
+    return newList
+
+}
+
+console.log(filtrationFunction(users2))
+
+// рекурсія
+
+function rec(number){
+    console.log(number)
+    number++;
+    if(number<10){
+        rec(number)
+    }
+
+}
+rec(0)
+
+</script>
+</body>
+</html>

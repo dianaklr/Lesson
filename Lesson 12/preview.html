@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+      let ads = {val:0};
+      function increment2(obj){
+        obj.val++;
+      }
+increment2(ads);
+      console.log(ads)
+
+      // функціональний вираз
+
+      let foo = function (){
+        console.log('foobar')
+      }
+
+      foo();
+
+      //стрілочка функція
+
+      let foo2 = () => console.log('foobar')
+        foo2()
+
+      //стрілочна функція яка обчислить суму
+
+      let calc = (a,b) =>
+      {
+          return a+b
+      }
+      // ще коротше стрілочна функція яка обчислить суму
+
+      let SuperCalc = (a,b) => a+b
+
+      console.log(SuperCalc(10, 20));
+
+      // self invoked function  -  функція яка сама себе викликає
+
+          (function (msg){
+              console.log(msg)
+          }('hello'));
+
+// рекурсія - процес виклику функції самій в собі
+
+      function rec(i, limit){
+        i++;
+          console.log(i)
+          if(i>limit){
+              return
+          }
+          rec(i,limit);
+      }
+
+      rec(0,100)
+
+// кол-бек функція
+
+
+      function calculator(action,a,b){
+         return action(a,b)
+      }
+
+      console.log(calculator(function (a, b) {
+          return a + b
+      }, 10, 20));
+
+      let users =[
+          {name: 'anna', age: 31, status: false},
+          {name: 'ivan', age: 30, status: false},
+          {name: 'artur', age: 20, status: true},
+      ]
+
+      // фільтрація через push
+     /*let filter = [];
+      for (const filterElement of users) {
+          if(filterElement.age<=30){
+              filter.push(filterElement)
+          }
+      }
+
+      console.log(filter)*/
+
+      // така ж дія через колбеки
+
+      let filter = users.filter(function (user){
+          return user.age<=30
+      })
+      console.log(filter)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -34,6 +34,101 @@
    //
    // array(2,3,4,5666,6,6,6,64,3,2,2,2,34)
 
+function iter(array){
+    for (const arrayElement of array) {
+        console.log(arrayElement)
+    }
+}
+
+    let a =[
+        {name: 'anna', age: 31, status: false},
+        {name: 'ivan', age: 30, status: false},
+        {name: 'artur', age: 20, status: true},
+    ]
+iter(a)
+
+//calculator
+    /*
+    function calc(num1, num2, action){
+     switch (action){
+         case '+':
+             return num2 + num1
+         break;
+         case '-':
+             return num1 - num2
+             break;
+         case '*':
+             return num1+ num2
+             break;
+             default:
+                 return NaN
+
+
+     }
+    }
+let result = calc(100, 200, '-')
+    console.log(result)
+    let result2 = calc(+prompt(), +prompt(), prompt())
+    console.log(result2)
+*/
+
+    /*
+function calc2(...nums){// потенційно невідома к-ть
+    console.log(nums)
+}
+
+    function calc2(){// потенційно невідома к-ть
+    let result = 0
+        for (const argument of arguments) {
+            result=result+argument
+        }
+        return result
+    }
+
+    console.log(calc2([10,20,30,40]))
+* */
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function minus(a, b) {
+        return a - b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function divide(a, b) {
+        return a / b;
+    }
+
+    function calculateMe(num1, num2, action) {
+        let result;
+        switch (action) {
+            case '+':
+                result = add(num1, num2);
+                break;
+            case '-':
+                result = minus(num1, num2);
+                break;
+
+            case '*':
+                result = multiply(num1, num2);
+                break;
+            case '/':
+                result = divide(num1, num2);
+                break;
+            default:
+                result = NaN;
+
+        }
+        return result
+
+    }
+
+    console.log(calculateMe(50, 12, '+'));
 
 
 
