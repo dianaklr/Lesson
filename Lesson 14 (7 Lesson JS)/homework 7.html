@@ -177,7 +177,7 @@ let Girls = [
     new Cinderella(`afonia`, 35,  37),
     new Cinderella(`aria`, 31,  32),
     new Cinderella(`maria`, 18,  35),
-    new Cinderella(`jenja`, 19,  35),
+    new Cinderella(`jenja`, 33,  36),
     new Cinderella(`anatolia`, 21,  33),
     new Cinderella(`lara`, 24,  39),
 ]
@@ -196,7 +196,7 @@ for (const element of Girls) {
         console.log(element)
     }
 }
-console.log(Girls.find(value => value.size===prince.size))
+console.log(Girls.find(value => value.size===prince.size && value.age===prince.age ))
 
 
 

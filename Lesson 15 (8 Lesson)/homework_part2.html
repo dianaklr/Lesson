@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="main_header">This is page for task2</h1>
+<ul>
+    <li class="linkList listElement1"><a href="#">link1</a></li>
+    <li class="linkList listElement2"><a href="#">link2</a></li>
+    <li class="linkList listElement3"><a href="#">link3</a></li>
+</ul>
+<h3 class="sub-header">content 1 segment</h3>
+<div class="content_1">
+    <p class="text_segment text1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem cumque distinctio,
+        dolorem
+        eligendi eum eveniet facere inventore ipsa minus pariatur repellendus sequi sit veniam voluptatum.
+        Fugit,
+        soluta?</p>
+
+</div>
+<h3 class="sub-header">content 2 segment</h3>
+<div class="content_2">
+    <p class="text_segment text2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae, exercitationem modi mollitia
+        omnis
+        possimus quam rerum sequi temporibus tenetur! Accusantium ad commodi eveniet excepturi laboriosam quis
+        quisquam sint temporibus.</p>
+</div>
+
+
+
+
+
+<script>
+
+
+
+
+    //Взяти файл template_2.html та працювати в ньому
+   // 1) Напишіть код, який :
+    // a) додає клас з назвою групи, елементу з ід main_header
+
+    let newElement = document.getElementById('main_header')
+    newElement.className='march-2022'
+    //  b) робить шириниу елементу ul 400px
+
+   let w400 = document.getElementsByTagName('ul')
+    for (let i=0; i<w400.length; i++) {
+        const a = w400[i]
+        a.style.width='400px'
+    }
+
+
+    //  c) робить шириниу всіх елементів з класом linkList шириною 50%
+    let w50 = document.getElementsByClassName('linkList')
+    for (let i=0; i<w50.length; i++) {
+        const a = w50[i]
+        a.style.width='50%'
+    }
+    //  d) отримує текст який зберігається в елементі з класом listElement2
+    let listElement2 = document.getElementsByClassName('listElement2')
+    //  e) отримує всі елементи li та змінює ім колір фону на сірий
+    let listLi= document.getElementsByTagName('li')
+    for (let i=0; i<listLi.length; i++) {
+        const a = listLi[i]
+        a.style.backgroundColor='gray'
+    }
+    // f) отримує всі елементи 'a' та додає їм клас anchor
+   let a_list = document.getElementsByTagName('a')
+    for (let a=0; a<a_list; a++){
+        const i = a_list[a]
+        i.className = 'anchor'
+    }
+    // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+    let a_list_new = document.getElementsByTagName('a')
+        for (const listNewElement of a_list_new) {
+            if(listNewElement.innerText === 'link3'){
+                listNewElement.style.fontsize = '40px'
+            }
+    }
+    // !!!! h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+
+    let arrA = document.getElementsByTagName('a')
+    let content = []
+
+    for (let i = 0; i < arrA.length; i++) {
+        content = arrA[i].innerText
+        console.log(content)
+
+    }
+    for (let i = 0; i < arrA.length; i++) {
+        arrA[i].className = `${content[i]}`
+    }
+
+    // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+
+    let colorUser = prompt()
+    let subHeader = document.getElementsByClassName('sub-header')
+
+    for (let i = 0; i < subHeader.length; i++) {
+        subHeader[i].style.backgroundColor = `${colorUser}`
+    }
+    // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+
+    let colorUser2 = prompt()
+    let subHeader2 = document.getElementsByClassName('sub-header')
+
+        for (const subHeader2Element of subHeader2) {
+            if (subHeader2Element.innerText === 'content 2 segment') {
+                subHeader2Element.style.backgroundColor = `${colorUser2}`
+            }
+    }
+
+    // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+
+    let userText = prompt()
+    let content_1 = document.getElementsByClassName('content_1')
+
+    for (let i = 0; i < content_1.length; i++) {
+        content_1[i].innerText = `${userText}`
+    }
+    // l) отримати елементи p та змінити їм padding на 20px
+
+    let p = document.getElementsByTagName('p')
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.padding = '20px'
+    }
+
+    // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
+
+    let text2 = document.getElementsByClassName('text2')
+    for (let i = 0; i < text2.length; i++) {
+        text2[i].innerText = 'march-2022'
+    }
+
+
+</script>
+
+</body>
+</html>
