@@ -8,11 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-
-
 <script>
-
-
 
 
 let users = [{
@@ -74,12 +70,12 @@ let users = [{
 
 
 /*
-    З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-    - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
+    - 1. З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+    - 2. За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
      Всі данні в одному блоці.
-    - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+    - 3. За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
      розділивши всі властивості по своїм блокам (div>div*4)
-    - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
+    - 4. За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
     розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 */
 // task 1
@@ -88,21 +84,76 @@ for (const user of users) {
     usersNew.push(user.address);
  };
 console.log(usersNew)
+
+
 // task 2
+
 
 for (let i = 0; i < users.length; i++) {
     let blockForUsers = document.createElement('div')
     let user = users[i]
-    blockForUsers.append(user.name)
-    blockForUsers.append(user.age)
-    blockForUsers.append(user.status)
-    for (let j = 0; j <user.address.length; j++) {
-        blockForUsers.append(user.address[j])
+    blockForUsers.append(user.name +' ')
+    blockForUsers.append(user.age + ' ')
+    blockForUsers.append(user.status + ' ')
+    for (const address in user.address) {
+        blockForUsers.append(user.address[address] + '  ')
     }
     document.body.append(blockForUsers)
 }
 
 
+
+
+// task 3
+for (let i = 0; i < users.length; i++) {
+    let blockForUsers2 = document.createElement('div')
+    let name = document.createElement('div')
+    let age = document.createElement('div')
+    let status = document.createElement('div')
+    let addressBlock = document.createElement('div')
+
+    blockForUsers2.append(name, age, status, addressBlock)
+
+    let user = users[i]
+    name.append(user.name +' ')
+    age.append(user.age + ' ')
+    status.append(user.status + ' ')
+    for (const address in user.address) {
+        addressBlock.append(user.address[address] + '  ')
+    }
+    document.body.append(blockForUsers2)
+}
+
+
+// task 4
+
+for (let i = 0; i < users.length; i++) {
+    let blockForUsers2 = document.createElement('div')
+    let name = document.createElement('div')
+    let age = document.createElement('div')
+    let status = document.createElement('div')
+    let blockForAddress = document.createElement('div')
+    let addressCity = document.createElement('div')
+    let addressCountry = document.createElement('div')
+    let addressStreet = document.createElement('div')
+    let addressHouseNumber = document.createElement('div')
+
+    blockForUsers2.append(name, age, status, blockForAddress)
+    blockForAddress.append(addressCountry, addressCity, addressStreet, addressHouseNumber)
+    let user = users[i]
+
+    name.append(user.name +' ')
+    age.append(user.age + ' ')
+    status.append(user.status + ' ')
+
+
+        addressCountry.append(user.address.country)
+        addressCity.append(user.address.city)
+        addressStreet.append(user.address.street)
+        addressHouseNumber.append(user.address.houseNumber)
+
+    document.body.append(blockForUsers2)
+}
 
 
 
