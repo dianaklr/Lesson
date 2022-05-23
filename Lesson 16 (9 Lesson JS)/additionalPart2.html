@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="content"></div>
+<h1>Правила бойцовского клуба</h1>
+<div id="wrap">
+    <div class="rules rule1">
+        <h2>Первое правило Бойцовского клуба.</h2>
+        <p>Никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule2">
+        <h2>Второе правило Бойцовского клуба.</h2>
+        <p>Никогда никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule3">
+        <h2>Третье правило Бойцовского клуба.</h2>
+        <p>В схватке участвуют только двое.</p>
+    </div>
+    <div class="rules rule4">
+        <h2>Четвертое правило Бойцовского клуба.</h2>
+        <p>Не более одного поединка за один раз.</p>
+    </div>
+
+    <div class="rules rule5">
+        <h2>Пятое правило Бойцовского клуба.</h2>
+        <p>Бойцы сражаются без обуви и голые по пояс.</p>
+    </div>
+    <div class="rules rule6">
+        <h2>Шестое правило Бойцовского клуба.</h2>
+        <p>Поединок продолжается столько, сколько потребуется.</p>
+    </div>
+    <div class="rules rule7">
+        <h2>Седьмое правило Бойцовского клуба.</h2>
+        <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+            окончен.</p>
+    </div>
+    <div class="rules rule8">
+        <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
+        <p>Новичок обязан принять бой.</p>
+    </div>
+</div>
+
+<script>
+
+         /*є сторінка rules.html. Контентом сторінки є заголовки та параграфи.
+         Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
+          створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li),
+           який буде змістом того, що знаходиться на сторінці.
+          Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+
+          */
+/*
+         let ul = document.createElement('ul')
+         let li = document.createElement('li')
+         let liArray
+
+         let content = document.getElementById('content')
+         let h2 = document.getElementsByTagName('h2')
+
+         for (const h2Element of h2) {
+             li.append(h2Element)
+             console.log(li)
+             liArray = Array.from(li)
+             console.log(liArray)
+         }
+*/
+         let content = document.getElementById('content')
+
+         let ul = document.createElement('ul')
+         let li = document.createElement('li')
+         ul.append(li)
+
+         let  h_List = document.querySelectorAll("h2")
+
+         for (const hListElement of h_List) {
+             console.log(hListElement)
+             li.append(hListElement)
+
+         }
+
+         content.append(ul)
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
