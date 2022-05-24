@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+  <style>
+    #text{
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="text">
+</div>
+<label>
+    <button>Click</button>
+</label>
+<br>
+<hr>
+<br>
+
+
+
+<form action="" name="form1">
+    enter your age
+    <input type="text" name="age">
+    <button>enter</button>
+</form>
+<br>
+<hr>
+<br>
+
+
+<form name = "nameInformation">
+    Your name
+    <input type="text" name = "name">
+    Your surname
+    <input type="text" name = "surname">
+</form>
+<br>
+<form name = "registration">
+    Enter email
+    <input type="email" name = "email">
+    Enter password
+    <input type="password" name = "password">
+</form>
+
+<button name = "buttonForRegistration"> enter </button>
+
+<br>
+<hr>
+<br>
+
+<form name="table">
+    line
+    <input type="number" name="line">
+    columns
+    <input type="number" name="columns">
+    content
+    <input type="text" name="content">
+</form>
+
+<button name = 'toForm'>to form</button>
+<table></table>
+
+
+<script>
+
+  /*- Создать произвольный елемент с id = text.
+  Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
+
+
+  let text = document.getElementById('text')
+  let button= document.getElementsByTagName('button')[0]
+
+  button.onclick = function (e){
+      text.remove()
+  }
+
+*/
+
+  /*
+   створити інпут який приймає вік людини та кнопку яка підтверджує дію.
+   При натисканні на кнопку зчитати інформацію з інпуту
+   та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+   */
+
+let buttonEnter = document.getElementsByTagName('button')[0];
+let form1 = document.forms.form1;
+
+
+  form1.onsubmit = function (e) {
+     e.preventDefault()
+      if(form1.age.value<18){
+          let alert = document.createElement('p')
+          alert.innerText = 'sorry you\'re too young'
+          document.body.append(alert)
+      }
+  };
+
+  /*
+  - створити 2 форми  по 2 інпути в кожній.
+  ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
+Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+    */
+
+
+let btnForRegistration = document.getElementsByName('buttonForRegistration')[0]
+
+  btnForRegistration.onclick = function (e){
+    let name = document.nameInformation.name.value
+    let surname = document.nameInformation.surname.value
+    let email = document.registration.email.value
+    let password = document.registration.password.value
+      console.log('name - ' + name + ' surname - ' + surname + '  |  ' + ' email - ' +email + ' password - ' + password)
+  }
+
+
+
+  /*
+  - Створити 3 инпута та кнопку.
+    Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+    При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+    (Додатковачастина для завдання)
+    */
+
+let toForm = document.getElementsByName('toForm')
+
+
+
+  toForm.onclick = function (e){
+      e.preventDefault()
+      let line = document.table.line
+      let columns = document.table.columns
+      let content = document.table.content
+      for (let i = 0; i < line; i++) {
+          let tr = document.createElement('tr')
+          tr.style.border = '1px solid black'
+          console.log(line)
+              for (let j = 0; j < columns; j++) {
+                  let th = document.createElement('th')
+                  th.innerText = ${content}
+                  tr.style.border = '1px solid black'
+                  console.log(columns)
+                  tr.append(th)
+                  document.table.append(th)
+              }
+      }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

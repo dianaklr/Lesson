@@ -74,14 +74,16 @@
          let content = document.getElementById('content')
 
          let ul = document.createElement('ul')
-         let li = document.createElement('li')
-         ul.append(li)
+
+
 
          let  h_List = document.querySelectorAll("h2")
 
          for (const hListElement of h_List) {
-             console.log(hListElement)
-             li.append(hListElement)
+             let li = document.createElement('li')
+             ul.append(li)
+             li.innerText = hListElement.innerText
+
 
          }
 
