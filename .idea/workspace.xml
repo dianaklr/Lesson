@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add additional part 2 (9 Lesson Js)">
-      <change afterPath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/additionalPart3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 17 (10 Lesson JS)/homework.html" afterDir="false" />
+    <list default="true" id="3caf0466-ad02-4e8e-bdd2-47efde6e9deb" name="Changes" comment="add hw 10">
+      <change afterPath="$PROJECT_DIR$/Lesson 18(11 Lesson JS)/cw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 18(11 Lesson JS)/hw.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/additionalPart2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/additionalPart2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/homoworkPart2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 16 (9 Lesson JS)/homeworkPart2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 17 (10 Lesson JS)/homework.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 17 (10 Lesson JS)/homework.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -106,7 +105,9 @@
       <workItem from="1651133658837" duration="924000" />
       <workItem from="1651654845490" duration="23682000" />
       <workItem from="1652285304566" duration="32040000" />
-      <workItem from="1653417162892" duration="4505000" />
+      <workItem from="1653417162892" duration="9374000" />
+      <workItem from="1653922671943" duration="391000" />
+      <workItem from="1653924219942" duration="5800000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 3">
       <created>1642238032646</created>
@@ -437,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653321852049</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add hw 10">
+      <created>1653422169508</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1653422169508</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add hw (JS, lesson2)" />
     <MESSAGE value="add сw (JS, lesson2)" />
     <MESSAGE value="add additional (JS, lesson2)" />
     <MESSAGE value="add hw (JS, lesson3)" />
@@ -480,6 +487,11 @@
     <MESSAGE value="add homework 9 part2" />
     <MESSAGE value="add additional (9 Lesson Js)" />
     <MESSAGE value="add additional part 2 (9 Lesson Js)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add additional part 2 (9 Lesson Js)" />
+    <MESSAGE value="add hw 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw 10" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

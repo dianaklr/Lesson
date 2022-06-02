@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2> task 1</h2>
+<form id="obj">
+    <input type="text" name="name">
+    <input type="text" name="age">
+    <button name="enter"> enter </button>
+</form>
+
+<br>
+<hr>
+<br>
+<h2> task 2</h2>
+<form id="auto">
+    <p>model</p>
+    <input type="text" name="model">
+    <p>type</p>
+    <input type="text" name="type">
+    <p>volume </p>
+    <input type="text" name="volume">
+
+    <button name="input"> input </button>
+</form>
+
+
+<script>
+    /*-створити форму з інпутами для name та age.
+        При відправці форми записати об'єкт в localstorage*/
+
+    let enter = document.getElementsByName('enter')[0]
+
+    enter.onclick = function (e){
+        e.preventDefault()
+        let userName = document.getElementsByName('name')[0];
+        let userAge = document.getElementsByName('age')[0];
+
+        localStorage.setItem(JSON.stringify(userName.value), JSON.stringify(userAge.value))
+    }
+
+/*-створити форму з інпутами для model,type та volume автівки.
+при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.*/
+
+    let input = document.getElementsByName('input')[0]
+
+    input.onclick = function (e){
+        e.preventDefault()
+        let model = document.getElementsByName('model')[0];
+        let type = document.getElementsByName('type')[0];
+        let volume = document.getElementsByName('volume')[0];
+        let arrValue = [JSON.stringify(model.value), JSON.stringify(type.value),JSON.stringify(volume.value)]
+
+        localStorage.setItem('obj', arrValue)
+    }
+
+
+
+</script>
+</body>
+</html>

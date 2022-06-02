@@ -55,21 +55,6 @@
 
 <button name = "buttonForRegistration"> enter </button>
 
-<br>
-<hr>
-<br>
-
-<form name="table">
-    line
-    <input type="number" name="line">
-    columns
-    <input type="number" name="columns">
-    content
-    <input type="text" name="content">
-</form>
-
-<button name = 'toForm'>to form</button>
-<table></table>
 
 
 <script>
@@ -133,9 +118,8 @@ let btnForRegistration = document.getElementsByName('buttonForRegistration')[0]
     (Додатковачастина для завдання)
     */
 
+  /*
 let toForm = document.getElementsByName('toForm')
-
-
 
   toForm.onclick = function (e){
       e.preventDefault()
@@ -158,6 +142,44 @@ let toForm = document.getElementsByName('toForm')
 
 
   }
+*/
+
+let inputOne = document.createElement('input')
+let inputTwo = document.createElement('input')
+let inputThee = document.createElement('input')
+let buttonElements = document.createElement('button')
+
+buttonElements.innerText = 'enter'
+document.body.append(inputOne, inputTwo, inputThee, buttonElements)
+
+buttonElements.addEventListener('click', function (){
+    const tr = inputOne.value;
+    const td = inputTwo.value;
+    const text = inputThee.value;
+
+    function creator(tr, td, text){
+        const table = document.createElement('table')
+        document.body.append(table)
+
+        for (let i = 0; i < tr; i++) {
+           document.createElement('tr');
+           table.appendChild(tr)
+
+            for (let j = 0; j < td; j++) {
+                document.createElement('td');
+                td.innerText = `${text}`
+                table.appendChild(td)
+                td.style.border = '1px solid red'
+            }
+        }
+
+
+    }
+        creator(tr, td, text)
+})
+
+
+
 
 
 
