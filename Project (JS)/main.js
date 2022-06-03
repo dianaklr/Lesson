@@ -1,0 +1,44 @@
+const userFull = 'userFull'
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(value => value.json())
+    .then(users => {
+        for (const user of users) {
+            let block = document.createElement('div')
+            document.body.append(block)
+
+            // let id = document.createElement('div')
+            // id.innerText = user.id
+            //
+            // let name = document.createElement('div')
+            // name.innerText = user.name
+            //
+            // block.append(id,name)
+
+            localStorage.setItem('userFull', JSON.stringify([]));
+            const container = document.getElementById('container')
+
+                    const userDiv = document.createElement('div')
+                    const content = document.createElement('div')
+
+                    content.innerText = `id - ${user.id},\n name - ${user.name}, \n username - ${user.username}, \n email - ${user.email},`
+
+                    const button = document.createElement('a');
+                    button.innerText = 'More information';
+                    button.href = './user-details.html'
+
+                    block.append(button);
+
+                    button.onclick = () => {
+                        const list = JSON.parse(localStorage.getItem(userFull)) || []
+                        list.push(user)
+                        localStorage.setItem(userFull,JSON.stringify(user))
+                        button.disabled=true //лище 1 натиснення на кнопку
+                }
+                userDiv.append(content, button)
+                 container.append(userDiv)
+            }//onclick
+
+    })//then
+
+
