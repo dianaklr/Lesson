@@ -6,7 +6,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
 
+        *{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+
+        .container{
+            /*width: 100%;*/
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+
+        .userInfo{
+            width: 40%;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px 0px;
+            border: 1px solid rgb(224, 209, 224, 0.09);
+            margin-right: 20px;
+
+        }
+        .button{
+            width: 190px;
+            font-size: 20px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 40px 40px rgba(230, 237, 239, 0.1) inset, 0 0 0 0 rgba(93, 80, 82, 0.01);
+            font-family: 'Montserrat', sans-serif;
+            /*font-weight: bold;*/
+            letter-spacing: 2px;
+            color: white;
+            transition: .15s ease-in-out;
+        }
+        .button:hover {
+            box-shadow: 0 0 10px 0 rgba(241, 55, 166, 0.32) inset, 0 0 10px 4px rgba(241, 55, 166, 0.3);
+            color: #989094;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -14,53 +60,7 @@
 <!--<a href="./user-details.html">show details</a>-->
 <script src="main.js"></script>
 
-<style>
 
-    *{
-        background-color: black;
-        color: white;
-        font-size: 25px;
-    }
-
-    .container{
-        /*width: 100%;*/
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;
-    }
-
-    .userInfo{
-        width: 40%;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        flex-direction: column;
-        margin: 30px 0px;
-        border: 1px solid rgb(224, 209, 224, 0.09);
-        margin-right: 20px;
-
-    }
-    .button{
-        width: 190px;
-        font-size: 20px;
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 25px;
-        margin: 10px 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 40px 40px rgba(230, 237, 239, 0.1) inset, 0 0 0 0 rgba(93, 80, 82, 0.01);
-        font-family: 'Montserrat', sans-serif;
-        /*font-weight: bold;*/
-        letter-spacing: 2px;
-        color: white;
-        transition: .15s ease-in-out;
-    }
-    .button:hover {
-        box-shadow: 0 0 10px 0 rgba(241, 55, 166, 0.32) inset, 0 0 10px 4px rgba(241, 55, 166, 0.3);
-        color: #989094;
-    }
-
-</style>
 <script>
 /*
 В index.html

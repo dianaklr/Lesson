@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #containerForComents{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .blockForComents{
+            width: 21%;
+            background-color: rgb(237, 221, 216, 0.1);
+            margin: 30px 0px;
+            padding: 20px;
+            border-radius: 10px;
+            border:1px solid rgb(242, 132, 104, 0.1) ;
+        }
+        .postId, .postPostId, .postName, .postEmail, .postBody {
+            padding: 5px 0px;
+            border-bottom: 1px solid #4b4d4f;
+        }
+        .formForOnePost{
+            padding: 10px 20px;
+            font-size: 19px;
+            width: 99%;
+            background-color: rgb(206, 225, 245, 0.1);
+            border-radius: 10px;
+            border:1px solid rgb(242, 132, 104, 0.1) ;
+        }
+
+    </style>
+
 </head>
 <body>
 <script src="main3.js"></script>
-</body>
+<script src="main2.js"></script>
+
 <div id="containerForPost"></div>
+<div id="containerForComents"></div>
+</body>
 
-<script>
 
 
-</script>
 </html>
+
+<!--post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.-->
+<!--Все без исключения элементы, который характеризируют user,post,comment
+ визуализировать, так, что бы было видно их блоки
+
+ (дать задний фон + margin. Иными словами - крайне четкая сетка)-->
